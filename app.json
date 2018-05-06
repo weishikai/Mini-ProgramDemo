@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/condition/condition",
+    "pages/template/template"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Hello MiniProgram",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "asserts/message.png",
+        "selectedColor": "asserts/message_active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "asserts/person.png",
+        "selectedColor": "asserts/person_active.png"
+      },
+      {
+        "pagePath":"pages/list/list",
+        "text": "列表渲染"
+      },
+      {
+        "pagePath": "pages/condition/condition",
+        "text": "条件渲染"
+      },
+      {
+        "pagePath": "pages/template/template",
+        "text": "模板演示"
+      }
+    ]
+  }
+}

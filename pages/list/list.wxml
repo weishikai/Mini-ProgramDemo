@@ -1,0 +1,10 @@
+<!--pages/list/list.wxml-->
+<text class="h1">列表渲染</text>
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+<text class="h1">批量渲染</text>
+<block wx:for="{{[1,2,3]}}">
+  <view>Index:{{index}}</view>
+  <view>Item {{item}}</view>
+</block>

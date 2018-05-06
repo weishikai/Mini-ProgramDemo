@@ -1,0 +1,7 @@
+<!--pages/condition/condition.wxml-->
+<text class="h1"> 条件渲染</text>
+<view wx:if="{{condition}}"> True </view>
+<text class="h1"> 多次判断</text>
+<view wx:if="{{length >5}}"> 1 </view>
+<view wx:elif="{{length >2}}"> 2 </view>
+<view wx:else> 3 </view>

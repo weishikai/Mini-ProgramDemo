@@ -1,0 +1,19 @@
+<!--
+  index: int
+  msg:string
+  time:string
+-->
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}}</text>
+    <text> Time: {{time}}</text>
+  </view>
+</template>
+<text class="h1">标准模板</text>
+<template is="msgItem" data="{{...item}}"/>
+<text class="h1">动态模板&&引用</text>
+
+<import src="temp2.wxml"/>
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{item % 2 == 0? 'even' : 'odd'}}"/>
+</block>

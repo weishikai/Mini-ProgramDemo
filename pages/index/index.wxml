@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- <text>{{demoText}}</text>
+  <view id="item-{{id}}"></view>
+  <view class="{{is_top?'top-cls' : 'sub-cls'}}"> Hi </view>
+  <view>{{a + b}} + {{c}} + d </view>
+  <view>{{object.key}} {{array[0]}}</view>
+  <view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text> 
+
+  </view>-->
+
+  <!-- <text class="h1">内容绑定</text>
+  <view>{{ message }}</view>
+  <text class="h1">组件属性</text>
+  <view id="item-{{id}}"> 组件属性展示 </view>
+  <text class="h1">控制属性</text>
+  <view wx:if="{{condition}}"> 条件控制展示 </view>
+  <text class="h1">三元运算符</text>
+  <view hidden="{{flag ? true : false}}"> Hidden </view>
+  <text class="h1">算数运算符</text>
+  <view> {{a + b}} + {{c}} + d </view>
+  <text class="h1">字符串运算符</text>
+  <view> {{"hello " + name}} </view>
+  <text class="h1">数据路径运算</text>
+  <view> {{object.key}} {{array[0]}} </view>
+  <text class="h1">数组组合</text>
+  <view wx:for="{{[zero,1,2,3,4]}}"> {{item}} </view> -->
+
+  <view wx:for="{{array}}">{{index}}: {{item.message}}</view>
+</view>
